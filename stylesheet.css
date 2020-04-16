@@ -1,0 +1,193 @@
+body {
+    font-family: Arial;
+    display: grid;
+    grid-template-columns: 150px 700px auto;
+    grid-template-areas: 
+    "a header c"
+    ". b2 ."
+    ". resultnum ."
+    ". result1 ."
+    ". result2 ."
+    ". result3 ."
+    ". result4 ."
+    ". result5 ."
+    ". result6 ."
+    ". result7 ."
+    ". result8 ."
+    "f1 footer footer";
+}
+.google-logo {
+    grid-area: a;
+    max-width: 80px;
+    padding: 30px 30px;
+}
+#search-box {
+    grid-area: header;
+    display: flex;
+    flex-direction: row;
+    border-radius: 30px;
+    border: 1px solid rgb(230, 230, 230);
+    height: 45px;
+    margin-top: 15px;
+}
+#text-box {
+    text-indent: 10px;
+    font-size: medium;
+    margin-top: 15px;
+    height: 45px;
+    border-radius: 30px;
+    width: 580px;
+    flex-grow: 2;
+    border: none;
+    margin: 0;
+}
+#search-box:hover {
+    border: 3px solid rgb(230, 230, 230);
+}
+.text-icons {
+    float: right;
+    margin-top: -10px;
+}
+.clear {
+    margin-right: 0 !important;
+    padding-right: 0 !important;
+}
+.search {
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+}
+.topright-nav {
+    grid-area: c;
+    justify-self: end;
+    margin-top: 15px;
+}
+#apps {
+    grid-area: c;
+    background-image: url(https://ssl.gstatic.com/gb/images/i1_1967ca6a.png);
+    opacity: .55;
+    vertical-align: middle;
+    background-position: -120px -37px;
+    background-size: 528px 68px;
+    display: inline-block;
+    height: 32px;
+    width: 40px;
+    margin-right: 10px;
+}
+button {
+    background-color: royalblue;
+    color: white;
+    font-weight: bold;
+    font-size: 9pt;
+    border-radius: 2px;
+    border: none;
+    padding: 10px;
+    margin: 5px;
+}
+.h2 {
+    grid-area: b2;
+    border-bottom: 1px rgb(230, 230, 230);
+}
+.h2 a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: rgb(107, 106, 106);
+    font-size: small;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+}
+li {
+    float: left;
+}
+.results-rightnav {
+    float: right;
+}
+.resultnum {
+    grid-area: resultnum;
+    padding: 0 0 0 10px;
+}
+#rline1 {
+    text-decoration: none;
+    color: rgb(107, 106, 106);
+    font-size: small;
+}
+#rline2 {
+    font-size: large;
+}
+p {
+    color: rgb(92, 90, 90);
+    font-size: 11pt;
+}
+.result1 {
+    grid-area: result1;
+    padding: 10px;
+    line-height: 1.5;
+}
+.result2 {
+    grid-area: result2;
+    padding: 10px;
+    line-height: 1.5;
+}
+.result3 {
+    grid-area: result3;
+    padding: 10px;
+    line-height: 1.5;
+}
+.result4 {
+    grid-area: result4;
+    padding: 10px;
+    line-height: 1.5;
+}
+.result5 {
+    grid-area: result5;
+    padding: 10px;
+    line-height: 1.5;
+}
+.result6 {
+    grid-area: result6;
+    padding: 10px;
+    line-height: 1.5;
+}
+.result7 {
+    grid-area: result7;
+    padding: 10px;
+    line-height: 1.5;
+}
+.result8 {
+    grid-area: result8;
+    padding: 10px;
+    line-height: 1.5;
+}
+
+.f1 {
+    grid-area: f1;
+    background-color: rgb(245, 243, 243);
+    margin-bottom: -20px;
+}
+footer {
+    background-color: rgb(245, 243, 243);
+    font-size: small;
+    margin-bottom: -20px;
+}
+footer ul {
+    display: block;
+    text-align: center;
+    padding: 0;
+    margin: 10px 10px 10px 0;
+}
+footer a {
+    text-decoration: none;
+    color: rgb(107, 106, 106);
+    padding: 0;
+    margin: 0 10px;;
+}
+.footer {
+    grid-area: footer;
+}
+#locbox {
+    padding-left: 10px;
+}
