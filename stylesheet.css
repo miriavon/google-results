@@ -14,6 +14,7 @@ body {
     ". result6 ."
     ". result7 ."
     ". result8 ."
+    ". pageclick ."
     "f1 footer footer";
 }
 .google-logo {
@@ -85,7 +86,6 @@ button {
 }
 .h2 {
     grid-area: b2;
-    border-bottom: 1px rgb(230, 230, 230);
 }
 .h2 a {
     display: block;
@@ -162,7 +162,15 @@ p {
     padding: 10px;
     line-height: 1.5;
 }
-
+.pageclick {
+    grid-area: pageclick;
+    text-align: center;
+    margin: 40px;
+}
+.google-logo-bottom {
+    padding-bottom: 0;
+    max-width: 100px;
+}
 .f1 {
     grid-area: f1;
     background-color: rgb(245, 243, 243);
